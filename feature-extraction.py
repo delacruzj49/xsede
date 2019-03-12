@@ -28,7 +28,7 @@ step = int(step_distance*window)
 #    betaRIR.append(rir[3])
 #    gammaRIR.append(rir[4])
 
-S = np.loadtxt('20181109_Control.csv', delimiter=',', dtype='float', skiprows=1, unpack=True)
+S = np.loadtxt('filteredS.csv', delimiter=',', dtype='float', skiprows=1, unpack=True)
 S = np.subtract(S, 0.6)
 #print(len(S))
 
